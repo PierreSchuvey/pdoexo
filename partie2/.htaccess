@@ -1,0 +1,14 @@
+#si le module est chargé alors tu m'executes ce qu'il s'y trouve
+<IfModule mod_rewrite.c>
+    #On utilise le module +FollowSymlinks, présent sur le serveur.
+    Options +FollowSymlinks
+    #Active ou désactive le réécriture (on -> active la réécriture)
+    RewriteEngine On
+    #Réécriture de l'url par une regex
+    #([a-z]+) = page=$1 parce qu'il est placé en premier
+    #? = $1 n'est pas obligatoire
+    #([0-9]+) = page=$2
+RewriteRule ([A-Z]{1}[a-z]+)$ patients.php?idPatient=$1 [L]
+RewriteRule ([0-9]+)$ rendezvous.php?idRDV=$1 [L]
+</IfModule>
+

@@ -1,0 +1,21 @@
+table{
+    text-align: center;
+    border-top-style: solid;
+}
+tbody{
+    border-bottom-style: solid;
+}
+td{
+    width: 200px;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+.tdHead{
+    font-weight: bold;
+    border-bottom-style:solid;
+}
+#inputPatients{
+    background: none;
+    border : none;
+    width: 50%;
+}

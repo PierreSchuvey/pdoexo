@@ -1,0 +1,12 @@
+table{
+    text-align: center;
+}
+td{
+    width: 200px;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+.tdHead{
+    font-weight: bold;
+    border-bottom-style:solid;
+}
